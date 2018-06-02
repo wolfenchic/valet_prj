@@ -16,4 +16,5 @@ python-dateutil==2.6.1
 python-http-client==3.0.0
 pytz==2018.3
 s3transfer==0.1.13
+stripe==1.82.1
 whitenoise==3.3.1
