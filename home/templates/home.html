@@ -1,0 +1,124 @@
+{% extends "base.html" %} {% load staticfiles %} {% load bootstrap_tags %} {% block content %}
+
+<br>
+<br>
+<section id="landingImage" class="bg-dark">
+    <div class="container-fluid">
+        <div class="row max-viewport align-items-center">
+            <div class="col-12">
+                <div class="row">
+                    <img class="img-responsive banner pull-right" src="{% static 'home/images/car.jpeg' %}"></img>
+                    <div class="landingText">
+                        <p class="tagLine">Your Car<br>Our Business</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="About">
+    <div class="container">
+        <div class="row AboutRow text-center">
+            <h1>About Us</h1>
+            <p>David Gould Valeting was established in August 2008 as a mobile Valeting service servicing both private & public sectors. We developed a massive customer base in the early years & we still have that huge following today.We pride ourselves on our excellent customer service and extremely high standards. 
+            <br>
+            In November 2013 we based ourselves @ Texaco/Mace Wilkinstown, Navan where we operate Co. Meath’s busiest Vehicle Wash & Valeting centers. 
+            We recently acquired a second location also located just outside Navan @ The Applegreen service station on the Navan ~ Slane Rd.
+            <br>
+            We're passionate about supporting our community. In total we employ 6 local people & support local schools, events & fundraisers. 
+            
+            </p>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+ <section id="services">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3 pad-bottom" data-scroll-reveal="enter from the bottom after 0.2s">
+                    <h2><strong>OUR SERVICES</strong></h2>
+                    Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae
+
+                </div>
+            </div>
+            <br>
+            <br>
+            {% for service in services %}
+            <div class="row text-center serviceRow">
+                <div class="col-sm-3 col-lg-3 serviceCard">
+                    <i class="fa fa-car fa-3x" aria-hidden="true"></i>
+                    <h4><strong>{{ service.name }}</strong></h4>
+                     <p>€{{ service.price }}</p>
+                     <a class="btn btn-default readButton" href ="http://valet-wolfenchic.c9users.io:8080/services/">Read More</a>
+							<form action = "#" method='post'>
+							{% csrf_token %}
+							<input type="hidden" id="id" name="id" value="{{service.id}}"/>
+              				<input type="hidden" id="quantity" name="quantity" value="1"/>
+							<input class="btn btn-default add-to-cart" type="submit" value="Add to Cart"/>
+							</form>
+						<br>
+				</div>
+                </div>
+                 {% endfor %}
+                 </div>
+               
+    </section>
+   
+    
+    <hr>
+    
+    <section id="Testimonials" class="bg-dark">
+    <div class="container-fluid">
+        <div class="row max-viewport align-items-center">
+            <div class="col-12">
+                
+        <div class="row testimonial Row">        
+         <div class="col-lg-3 col-sm-3 col-xs-6">
+            <div class="card testimonialCard text-center">
+                   
+                    <p class="aboutParagraph">"After one valet with David and Co my cab is literally gleaming and the upholstery is just like new.
+Great service and value. Keep going!" <br> Niamh</p>
+                    
+                    </div>
+                      <br>
+                      </div>
+            
+            <div class="col-lg-3 col-sm-3 col-xs-6">
+            <div class="card testimonialCard text-center">
+                  
+                    <p class="aboutParagraph">"My car is like brand new. Great work and fantastic price. Plus I didn't even have to go anywhere was all done at work." <br>Aoife.</p>
+                    
+                    </div>
+                      <br>
+                    </div>
+            
+             <div class="col-lg-3 col-sm-3 col-xs-6">
+            <div class="card testimonialCard text-center">
+                  
+                    <p class="aboutParagraph">"Absolutely fantastic service and would highly recommend.... Car was like brand new." <br>Lee</p>
+                    <br>
+                    <br>
+                    </div>
+                      <br>
+                    </div>
+                    
+             <div class="col-lg-3 col-sm-3 col-xs-6">
+            <div class="card testimonialCard text-center">
+                    <p class="aboutParagraph">"Just had car valeted and it looks better than when it came out of the showroom. Highly recommend " <br>Sandra</p>
+                    <br>
+                    <br>
+                    </div>
+                      <br>
+                    </div>
+                    
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock content %}

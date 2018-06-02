@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% load staticfiles %} {% load bootstrap_tags %} {% block content %}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1>Our Services</h1>
+
+{% for service in services %}
+<div class="container-fluid">
+    <div class="row cardRow">
+        <div class="col-lg-4 col-sm-4 col-xs-12 text-center">
+            <div class="card servicesCard">
+                <h3 class="cardTitle">{{ service.name }}</h3>
+                
+                <p> {{ service.description }}</p>
+               
+                <p class="cardTag">€{{ service.price }}</p>
+            </div>
+            <br>
+        </div>
+        
+
+        {% endfor %}
+
+{% endblock content %}

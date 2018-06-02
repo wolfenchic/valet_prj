@@ -1,0 +1,107 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p { 
+    font-size: 1.8rem;
+    line-height: 2.0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Anton', sans-serif;
+}
+.navbar-trans {
+  background: white; }
+
+.nav{
+    list-style:none;
+    margin: 20px;
+    text-align:center;
+    font-size: 2rem;
+
+}
+.nav li{
+    display:inline;
+    color: #5EC5C4;
+}
+.nav a{
+    display:inline-block;
+}
+
+#About {
+    background-color: #EB8732;
+    color: white;
+}
+
+#landingImage {
+position: relative;
+text-align: left;
+margin-top: 0px;
+
+}
+
+.landingText{
+    position: absolute;
+    margin: auto;
+    margin-left: 60px;
+    top: 20%; left: 0px; bottom: 0; right: 0;
+	/*font-family: 'Indie Flower', cursive;*/
+	color: white;
+	font-size: 4rem;
+}
+
+
+.serviceCard {
+    /*padding:  10px 10px 10px 10px;*/
+    background-color: white;
+    opacity: 0.8;
+}
+
+.AboutRow {
+    margin: 20px 20px 20px 20px;
+}
+
+#Testimonials {
+    background-image: url(./images/testimonial.jpeg);
+}
+
+.testimonialCard {
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+    background-color: white;
+    opacity: 0.7;
+    padding: 20px 20px 20px 20px;
+    
+}
+
+.readButton {
+    background-color: #122386;
+    color: white;
+}
+
+.addButton {
+    background-color: #EB8732;
+    color: white;
+}
+
+.serviceRow {
+    margin: auto;
+    text-align: center;
+   
+}
+
+.serviceCard {
+    /*margin: 20px;*/
+    /*padding: 20px 20px 20px 20px;*/
+    border: 1px solid gray;
+}
+
+.alert {
+    margin-top: 200px;
+    background: linear-gradient(to right, black, #eef2f3, black); 
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+}
