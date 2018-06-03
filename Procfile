@@ -1,1 +1,1 @@
-web: gunicorn ecommerce_prj.wsgi
+web: gunicorn valet_prj.wsgi
