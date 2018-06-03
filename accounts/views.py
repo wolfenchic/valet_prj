@@ -6,6 +6,10 @@ from .forms import UserRegistrationForm
 from django.contrib.auth.decorators import login_required
 
 # Create your views here.
+
+def get_contact_page(request):
+  return render(request, 'accounts/contact.html')
+  
 def logout(request):
     auth.logout(request)
     messages.success(request, "You have successfully logged out")

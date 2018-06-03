@@ -11,4 +11,5 @@ from django.contrib import auth, messages
 def get_home_page(request):
   services = Service.objects.all()
   return render(request, 'home.html', {'services': services})
+  
 
