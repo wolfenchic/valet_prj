@@ -22,6 +22,8 @@ from home.views import get_home_page
 from services.views import get_services_page
 from accounts import urls as accounts_urls
 from cart import urls as cart_urls
+from checkout import urls as checkout_urls
+
 
 
 urlpatterns = [
@@ -29,6 +31,7 @@ urlpatterns = [
     url(r'^$', get_home_page, name='home'), 
     url(r'^services/', include(services_urls)), 
     url(r'^accounts/', include(accounts_urls)),
-     url(r'^cart/', include(cart_urls)),
+    url(r'^cart/', include(cart_urls)),
+    url(r'^checkout/', include(checkout_urls)),
     
 ]

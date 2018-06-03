@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'services',
     'accounts',
     'cart', 
+    'checkout', 
 ]
 
 MIDDLEWARE = [
@@ -126,5 +127,6 @@ STATIC_URL = '/static/'
 
 MESSAGE_STORAGE='django.contrib.messages.storage.session.SessionStorage'
 
-
+STRIPE_PUBLISHABLE_KEY = "pk_test_0YXsjzjSRhNvVRKvnUJeavXh"
+STRIPE_SECRET = "sk_test_OPAli4itejK7cGtUSsnV0CkH"
 
