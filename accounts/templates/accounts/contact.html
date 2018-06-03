@@ -2,26 +2,82 @@
 
 <br>
 <br>
+<section id="contactImage" class="bg-dark">
+    <div class="container-fluid">
+        <div class="row max-viewport align-items-center">
+            <div class="col-12">
+                <div class="row">
+                    <img class="img-responsive banner" src="{% static 'home/images/carview.jpg' %}"></img>
+                    <div class="contactText">
+                        <p class="contactText">
+                           <h1>Contact Us</h1>
+                           
+                            Make your car happy<br>
+                            Drop us a line</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <br>
 <br>
-<h1>This is the contact page</h1>
 
-<div class="container-fluid">
-    <div class="row text-center">
-        <h3>Our Locations</h3>
-    <div class="col-sm-6 col-md-6 col-xs-12 text-center">
-        <div class="card mapCard">
+  <section id="contact" class="p-5 bg-dark">
+        <div class="container">
+            <div class="row contactRow">
+                <div class="col-sm-6 col-lg-6 col-xs-10 formSection text-center">
+                    <h1 class="formHeader">Send Us Your Enquiry</h1>
+                    <br>
+                    <form class="myForm" onsubmit="openModal()" action="https://formspree.io/wolfe.nichola@gmail.com" method="POST">
+                        <div class="form-group"><input class="form-control" name="email" required="" type="email" placeholder="Your email *"></div>
+                        <div class="form-group"><input class="form-control mt-3" name="name" type="text" placeholder="Your name"></div>
+                        <div class="form-group"><input class="form-control mt-3" name="telephone" type="tel" placeholder="Your telephone"></div>
+                        <div class="form-group"><input class="form-control mt-3" name="information" type="information" placeholder="How did you find me"></div>
+                        <div class="form-group"><textarea class="form-control" name="message" rows="12" placeholder="Your message"></textarea></div>
+                        <button type="submit" value="send" class="btn btn-default contactButton">Submit</button>
+                    </form>
+                </div>
+                
+                <div class="col-sm-4 col-lg-4 col-xs-12 col-sm-offset-1 text-left">
+                     <div class="card mapCard">
+                         <p class="mapParagraph">
+                         R162, 
+                         <br>Wilkinstown,
+                         <br>
+                         Navan, 
+                         <br>
+                         Co. Meath, 
+                         <br>
+                         C15 EYOP
+                         <br>
+                         Ph: 01-11111111
+                         </p>
+                         <iframe class="img-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18879.732175630095!2d-6.729534977744702!3d53.739965000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x96ece08a6369995c!2sDoughty%E2%80%99s+Texaco+Mace!5e0!3m2!1sen!2sie!4v1528054244984" allowfullscreen></iframe>
+                    </div>
+                   
+                    <div class="card mapCard">
+                        <p class="mapParagraph">
+                            Kenstown Road
+                            <br>
+                            Athlumney, 
+                            <br>
+                            Navan, 
+                            <br>
+                            Co. Meath,
+                            <br>
+                            C15 TW2A
+                            <br>
+                            ph: 01-111227262
+                        </p>
+            <iframe class="img-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2362.8578911969307!2d-6.664141000000005!3d53.650636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x13e7dd1ffd1719f1!2sApplegreen!5e0!3m2!1sen!2sie!4v1528057528112" allowfullscreen></iframe>
+                            </div>
+                            </div>
+        </div>
+        </div>
+        </section>
+        
 
-<iframe class="img-responsive" src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d126.8637920945285!2d-6.716493112973767!3d53.74055036205475!2m2!1f103.36052302508125!2f45!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x486750188479064d%3A0x96ece08a6369995c!2sDoughty%E2%80%99s+Texaco+Mace!5e1!3m2!1sen!2sie!4v1528028407948"  allowfullscreen></iframe>
-</div>
-</div>
 
-<div class="col-sm-6 col-md-6 col-xs-12 text-center">
-        <div class="card mapCard">
-            <iframe  class="img-responsive" src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d126.8637920945285!2d-6.662203419112904!3d53.649962466888255!2m2!1f298.3029831689004!2f45!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x486744bb260bfb85%3A0x13e7dd1ffd1719f1!2sApplegreen!5e1!3m2!1sen!2sie!4v1528028866125"  allowfullscreen></iframe>
-</div>
-</div>
-
-</div>
-</div>
 {% endblock content %}

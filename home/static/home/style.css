@@ -1,6 +1,6 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 150px;
+    font-family: 'Archivo', sans-serif;
+    margin-top: 50px;
 }
 
 p { 
@@ -9,7 +9,7 @@ p {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Archivo Black', sans-serif;
 }
 .navbar-trans {
   background: white; }
@@ -124,5 +124,53 @@ margin-top: 0px;
 
 .mapCard {
     padding: 20px 20px 20px 20px;
-    margin: 20px 20px 20px 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+}
+
+.mapParagraph {
+    line-height: 1.2;
+    font-size: 1.2rem;
+}
+
+#contact {
+    margin-left: 20px;
+}
+.formSection {
+    border: 1px solid gray;
+}
+
+.myForm {
+    padding-bottom: 20px;
+  
+}
+
+#contact: {
+    padding: 20px 20px 20px 20px;
+}
+
+.banner {
+position: relative;
+text-align: left;
+margin-top: 0px;
+-webkit-filter: brightness(60%);
+
+}
+
+.contactText{
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    top: 40%; left: 0px; bottom: 0; right: 0;
+	color: white;
+	font-size: 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .contactText {
+        font-size: 2rem;
+    }
+
 }
