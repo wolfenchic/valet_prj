@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["dj-valet-wolfenchic.c9users.io"]
+ALLOWED_HOSTS = ["dj-valet-wolfenchic.c9users.io", "djvalet.herokuapp.com"]
 
 
 # Application definition
