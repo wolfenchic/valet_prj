@@ -1,5 +1,5 @@
 body {
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 50px;
 }
 
@@ -9,7 +9,8 @@ p {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 .navbar-trans {
   background: white; }
@@ -44,10 +45,6 @@ h1, h2, h3, h4 {
     margin-right: 30px;
 }
 
-#About {
-    background-color: #EB8732;
-    color: white;
-}
 
 #landingImage {
 position: relative;
@@ -56,16 +53,32 @@ margin-top: 0px;
 
 }
 
-.landingText{
+
+/*.landingText{*/
+/*    position: absolute;*/
+/*    margin: auto;*/
+    
+/*}*/
+
+.tagLine, .scroll {
     position: absolute;
     margin: auto;
-    margin-left: 60px;
-    top: 20%; left: 0px; bottom: 0; right: 0;
-	/*font-family: 'Indie Flower', cursive;*/
-	color: white;
+    color: white;
 	font-size: 4rem;
+	text-align: center;
+	 margin-left: 50px;
+    top: 20%; left: 0px; bottom: 0; right: 0;
 }
 
+.scroll {
+    position: absolute;
+    margin: auto;
+    color: white;
+	font-size: 4rem;
+	text-align: center;
+	 margin-left: 50px;
+    top: 40%; left: 0px; bottom: 0; right: 0;
+}
 
 .serviceCard {
     /*padding:  10px 10px 10px 10px;*/
@@ -73,12 +86,34 @@ margin-top: 0px;
     opacity: 0.8;
 }
 
+.logoCard {
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+.logoImage {
+    margin: auto;
+}
+
 .AboutRow {
     margin: 20px 20px 20px 20px;
 }
 
-#Testimonials {
-    background-image: url(./images/testimonial.jpeg);
+#text-carousel {
+    background-image: url(./images/interior.jpg);
+}
+
+.carouselrow { 
+    background-color: black;
+    opacity: 0.6;
+}
+
+.carousel1 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
 }
 
 .testimonialCard {
@@ -156,7 +191,10 @@ position: relative;
 text-align: left;
 margin-top: 0px;
 -webkit-filter: brightness(60%);
+}
 
+.bannerHome {
+ -webkit-filter: brightness(60%);   
 }
 
 .contactText{

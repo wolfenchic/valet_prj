@@ -7,9 +7,9 @@
         <div class="row max-viewport align-items-center">
             <div class="col-12">
                 <div class="row">
-                    <img class="img-responsive banner pull-right" src="{% static 'home/images/car.jpeg' %}"></img>
+                    <img class="img-responsive bannerHome pull-right" src="{% static 'home/images/carKey.jpeg' %}"></img>
                     <div class="landingText">
-                        <p class="tagLine">Your Car<br>Our Business</p>
+                        <p class="tagLine">The professional way to a cleaner</p><p class="scroll">car</p> 
                     </div>
                 </div>
             </div>
@@ -21,19 +21,70 @@
     <div class="container">
         <div class="row AboutRow text-center">
             <h1>About Us</h1>
-            <p>David Gould Valeting was established in August 2008 as a mobile Valeting service servicing both private & public sectors. We developed a massive customer base in the early years & we still have that huge following today.We pride ourselves on our excellent customer service and extremely high standards. 
+            <p>David Gould Valeting was established in August 2008 as a mobile Valeting service servicing both private & public sectors. We developed a massive customer base in the early years & we still have that huge following today. We pride ourselves on our excellent customer service and extremely high standards. 
             <br>
-            In November 2013 we based ourselves @ Texaco/Mace Wilkinstown, Navan where we operate Co. Meath’s busiest Vehicle Wash & Valeting centers. 
-            We recently acquired a second location also located just outside Navan @ The Applegreen service station on the Navan ~ Slane Rd.
-            <br>
-            We're passionate about supporting our community. In total we employ 6 local people & support local schools, events & fundraisers. 
-            
             </p>
         </div>
     </div>
 </section>
 
 <hr>
+
+    
+    <section id="clients">
+         <div class="container-fluid">
+            <div class="row text-center">
+                <h1>Our clients</h1>
+                <p>Over the last ten years we've established a loyal customer base. Here are just some of our commercial customers.</p>
+                
+                <div class="col-sm-4 col-lg-4 col-xs-12">
+                    <div class="card logoCard">
+                        <img class="img-responsive logoImage"  src="{% static 'home/images/post.jpg' %}"></img>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4 col-lg-4 col-xs-12">
+                    <div class="card logoCard">
+                        <img class="img-responsive logoImage"  src="{% static 'home/images/xtra.jpg' %}"></img>
+                    </div>
+                </div>
+                
+                
+                <div class="col-sm-4 col-lg-4 col-xs-12">
+                    <div class="card logoCard">
+                        <img class="img-responsive logoImage"  src="{% static 'home/images/northgate.jpg' %}"></img>
+                    </div>
+                </div>
+                
+                </div>
+                <br>
+                
+                <div class="row text-center">
+                  <div class="col-sm-4 col-lg-4 col-xs-12">
+                    <div class="card logoCard">
+                        <img class="img-responsive logoImage"   src="{% static 'home/images/HSE-Logo.jpg' %}"></img>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4 col-lg-4 col-xs-12">
+                    <div class="card logoCard">
+                        <img class="img-responsive logoImage"  src="{% static 'home/images/garda.jpg' %}"></img>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4 col-lg-4 col-xs-12">
+                    <div class="card logoCard">
+                        <img class="img-responsive logoImage" src="{% static 'home/images/TeagascLogo.jpg' %}"></img>
+                    </div>
+                </div>
+                
+                
+                </div>
+                </div>
+        
+    </section>
+    
+    <hr>
 
  <section id="services">
         <div class="container">
@@ -73,55 +124,99 @@
     
     <hr>
     
-    <section id="Testimonials" class="bg-dark">
-    <div class="container-fluid">
-        <div class="row max-viewport align-items-center">
-            <div class="col-12">
-                
-        <div class="row testimonial Row">        
-         <div class="col-lg-3 col-sm-3 col-xs-6">
-            <div class="card testimonialCard text-center">
-                   
-                    <p class="aboutParagraph">"After one valet with David and Co my cab is literally gleaming and the upholstery is just like new.
+    <div id="text-carousel" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="row carouselrow">
+        <div class="col-xs-offset-3 col-xs-6">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="carousel-content">
+                        <div>
+                           <p class="carousel1">"After one valet with David and Co my cab is literally gleaming and the upholstery is just like new.
 Great service and value. Keep going!" <br> Niamh</p>
-                    
+                        </div>
                     </div>
-                      <br>
-                      </div>
-            
-            <div class="col-lg-3 col-sm-3 col-xs-6">
-            <div class="card testimonialCard text-center">
-                  
-                    <p class="aboutParagraph">"My car is like brand new. Great work and fantastic price. Plus I didn't even have to go anywhere was all done at work." <br>Aoife.</p>
-                    
+                </div>
+                <div class="item">
+                    <div class="carousel-content">
+                        <div>
+                            <p class="carousel1">"My car is like brand new. Great work and fantastic price. Plus I didn't even have to go anywhere was all done at work." <br>Aoife.</p>
+                        </div>
                     </div>
-                      <br>
+                </div>
+                
+                <div class="item">
+                    <div class="carousel-content">
+                        <div>
+                            <p class="carousel1">""Absolutely fantastic service and would highly recommend.... Car was like brand new." <br>Lee</p>
+                        </div>
                     </div>
-            
-             <div class="col-lg-3 col-sm-3 col-xs-6">
-            <div class="card testimonialCard text-center">
-                  
-                    <p class="aboutParagraph">"Absolutely fantastic service and would highly recommend.... Car was like brand new." <br>Lee</p>
-                    <br>
-                    <br>
-                    </div>
-                      <br>
-                    </div>
-                    
-             <div class="col-lg-3 col-sm-3 col-xs-6">
-            <div class="card testimonialCard text-center">
-                    <p class="aboutParagraph">"Just had car valeted and it looks better than when it came out of the showroom. Highly recommend " <br>Sandra</p>
-                    <br>
-                    <br>
-                    </div>
-                      <br>
-                    </div>
-                    
-            </div>
+                </div>
+                
             </div>
         </div>
     </div>
+    <!-- Controls --> <a class="left carousel-control" href="#text-carousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+ <a class="right carousel-control" href="#text-carousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+
+</div>
+
 </section>
+
+
+<!--    <section id="Testimonials" class="bg-dark">-->
+<!--    <div class="container-fluid">-->
+<!--        <div class="row max-viewport align-items-center">-->
+<!--            <div class="col-12">-->
+                
+<!--        <div class="row testimonial Row">        -->
+<!--         <div class="col-lg-3 col-sm-3 col-xs-6">-->
+<!--            <div class="card testimonialCard text-center">-->
+                   
+<!--                    <p class="aboutParagraph">"After one valet with David and Co my cab is literally gleaming and the upholstery is just like new.-->
+<!--Great service and value. Keep going!" <br> Niamh</p>-->
+                    
+<!--                    </div>-->
+<!--                      <br>-->
+<!--                      </div>-->
+            
+<!--            <div class="col-lg-3 col-sm-3 col-xs-6">-->
+<!--            <div class="card testimonialCard text-center">-->
+                  
+<!--                    <p class="aboutParagraph">"My car is like brand new. Great work and fantastic price. Plus I didn't even have to go anywhere was all done at work." <br>Aoife.</p>-->
+                    
+<!--                    </div>-->
+<!--                      <br>-->
+<!--                    </div>-->
+            
+<!--             <div class="col-lg-3 col-sm-3 col-xs-6">-->
+<!--            <div class="card testimonialCard text-center">-->
+                  
+<!--                    <p class="aboutParagraph">"Absolutely fantastic service and would highly recommend.... Car was like brand new." <br>Lee</p>-->
+<!--                    <br>-->
+<!--                    <br>-->
+<!--                    </div>-->
+<!--                      <br>-->
+<!--                    </div>-->
+                    
+<!--             <div class="col-lg-3 col-sm-3 col-xs-6">-->
+<!--            <div class="card testimonialCard text-center">-->
+<!--                    <p class="aboutParagraph">"Just had car valeted and it looks better than when it came out of the showroom. Highly recommend " <br>Sandra</p>-->
+<!--                    <br>-->
+<!--                    <br>-->
+<!--                    </div>-->
+<!--                      <br>-->
+<!--                    </div>-->
+                    
+<!--            </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 
 
 {% endblock content %}
