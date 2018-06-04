@@ -54,36 +54,41 @@ margin-top: 0px;
 }
 
 
-/*.landingText{*/
-/*    position: absolute;*/
-/*    margin: auto;*/
-    
-/*}*/
 
-.tagLine, .scroll {
+.tagLine {
     position: absolute;
     margin: auto;
     color: white;
-	font-size: 4rem;
-	text-align: center;
-	 margin-left: 50px;
+	font-size: 5rem;
+	text-align: left;
+	margin-left: 50px;
     top: 20%; left: 0px; bottom: 0; right: 0;
+    font-weight: 800;
 }
 
-.scroll {
-    position: absolute;
-    margin: auto;
+
+.serviceTitle {
     color: white;
-	font-size: 4rem;
-	text-align: center;
-	 margin-left: 50px;
-    top: 40%; left: 0px; bottom: 0; right: 0;
 }
 
-.serviceCard {
-    /*padding:  10px 10px 10px 10px;*/
+.homeServiceCard {
+    border: 1px solid gray;
     background-color: white;
     opacity: 0.8;
+    margin-bottom: 20px;
+    
+}
+
+.fa-check {
+    color: #0F2281;
+}
+
+.serviceHeader {
+    background-color: #E48D3D;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    margin: 0px;
 }
 
 .logoCard {
@@ -130,9 +135,12 @@ margin-top: 0px;
 .readButton {
     background-color: #122386;
     color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
 }
 
-.addButton {
+.addButton, .add-to-cart {
     background-color: #EB8732;
     color: white;
 }
@@ -140,13 +148,11 @@ margin-top: 0px;
 .serviceRow {
     margin: auto;
     text-align: center;
-   
 }
 
-.serviceCard {
-    /*margin: 20px;*/
-    /*padding: 20px 20px 20px 20px;*/
-    border: 1px solid gray;
+#services {
+    background-image: url(./images/cleaning.jpg);
+    padding-bottom: 30px;
 }
 
 .alert {

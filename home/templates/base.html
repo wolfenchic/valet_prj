@@ -51,7 +51,7 @@
                     <li><a href="{% url 'register' %}">Register <i class="fa fa-user-plus"></i></a></li>
                     <li><a href="{% url 'login' %}">Log In <i class="fa fa-sign-in"></i></a></li>
                     {% endif %}
-                    <li><a href="{% url 'view_cart' %}">Cart <i class="fa fa-shopping-cart"></i><label class="badge badge-light">{{ items_in_cart }}</label></a></a></li>
+                     <li><a href="{% url 'view_cart' %}">Cart <i class="fa fa-shopping-cart"></i><label class="badge badge-light">{{ items_in_cart }}</label></a></a></li>
                     <li><a href="{% url 'contact' %}">Contact </a></li>
                     <li>       
                   </li>
@@ -64,12 +64,14 @@
  
      
 
-    {% if messages %}
-    <div class="alert alert-success">
-        <div class="messages">
-            {% for message in messages %} {{ message }} {% endfor %}
+ {% if messages %}
+        <div class="alert alert-success">
+            <div class="messages">
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+            </div>
         </div>
-    </div>
     {% endif %}
 
 

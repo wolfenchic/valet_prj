@@ -7,9 +7,10 @@
         <div class="row max-viewport align-items-center">
             <div class="col-12">
                 <div class="row">
-                    <img class="img-responsive bannerHome pull-right" src="{% static 'home/images/carKey.jpeg' %}"></img>
+                    <img class="img-responsive bannerHome pull-right" src="{% static 'home/images/wheel.jpg' %}"></img>
                     <div class="landingText">
-                        <p class="tagLine">The professional way to a cleaner car</p> 
+                        <p class="tagLine">DJ Valeting<br>Clean. Fast. Friendly.</p> 
+                        
                     </div>
                 </div>
             </div>
@@ -30,6 +31,192 @@
 
 <hr>
 
+ <section id="services">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3 pad-bottom" data-scroll-reveal="enter from the bottom after 0.2s">
+                    <h2 class="serviceTitle"><strong>OUR SERVICES</strong></h2>
+
+                </div>
+            </div>
+            <br>
+            <br>
+            
+            <div class="row text-center serviceRow">
+                
+                <div class="col-sm-2 col-lg-2 col-xs-12">
+                    <div class="card homeServiceCard">
+                    <div class="serviceHeader">
+                    <h4>Car Wash <br><br> €7 </h4>
+                    </div>
+                    <br>
+                    <p> <i class="fa fa-check"></i> PH Neutral Shampoo</p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Wheels & Chassis </p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Hand Dried</p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> High Gloss Finish</p>
+                    <hr>
+                    <div class="action">
+							<form action = "{% url 'add_to_cart' %}" method='post'>
+							{% csrf_token %}
+							<input type="hidden" id="id" name="id" value="{{service.id}}"/>
+              				<input type="hidden" id="quantity" name="quantity" value="1"/>
+							<input class="btn btn-default add-to-cart" type="submit" value="Add to Cart"/>
+							</form>
+                    </div>
+                    <br>
+                     <a href="{% url 'contact' %}" class="btn btn-default  readButton" role="button"> Enquire </a>
+                    <br>
+                    </div>
+                </div>
+                
+                <div class="col-sm-2 col-lg-2 col-xs-12">
+                    <div class="card homeServiceCard">
+                    <div class="serviceHeader">
+                    <h4>Jeep Wash <br><br> €9 </h4>
+                    </div>
+                    <br>
+                    <p> <i class="fa fa-check"></i> PH Neutral Shampoo</p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Wheels & Chassis </p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Hand Dried</p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> High Gloss Finish</p>
+                    <hr>
+                    <div class="action">
+							<form action = "{% url 'add_to_cart' %}" method='post'>
+							{% csrf_token %}
+							<input type="hidden" id="id" name="id" value="{{service.id}}"/>
+              				<input type="hidden" id="quantity" name="quantity" value="1"/>
+							<input class="btn btn-default add-to-cart" type="submit" value="Add to Cart"/>
+							</form>
+                    </div>
+                    <br>
+                    <a href="{% url 'contact' %}" class="btn btn-default  readButton" role="button"> Enquire </a>
+                    <br>
+                    </div>
+                </div>
+                
+                 <div class="col-sm-2 col-lg-2 col-xs-12">
+                    <div class="card homeServiceCard">
+                    <div class="serviceHeader">
+                    <h4>Small Van <br><br> €9 </h4>
+                    </div>
+                    <br>
+                    <p> <i class="fa fa-check"></i> PH Neutral Shampoo</p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Wheels & Chassis </p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Hand Dried</p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> High Gloss Finish</p>
+                    <hr>
+                    <div class="action">
+							<form action = "{% url 'add_to_cart' %}" method='post'>
+							{% csrf_token %}
+							<input type="hidden" id="id" name="id" value="{{service.id}}"/>
+              				<input type="hidden" id="quantity" name="quantity" value="1"/>
+							<input class="btn btn-default add-to-cart" type="submit" value="Add to Cart"/>
+							</form>
+                    </div>
+                    <br>
+                     <a href="{% url 'contact' %}" class="btn btn-default  readButton" role="button"> Enquire </a>
+                    <br>
+                    </div>
+                </div>
+                
+                <div class="col-sm-2 col-lg-2 col-xs-12">
+                    <div class="card homeServiceCard">
+                    <div class="serviceHeader">
+                    <h4>Large Van <br><br> €12 </h4>
+                    </div>
+                    <br>
+                    <p> <i class="fa fa-check"></i> PH Neutral Shampoo</p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Wheels & Chassis </p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Hand Dried</p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> High Gloss Finish</p>
+                    <hr>
+                    <div class="action">
+							<form action = "{% url 'add_to_cart' %}" method='post'>
+							{% csrf_token %}
+							<input type="hidden" id="id" name="id" value="{{service.id}}"/>
+              				<input type="hidden" id="quantity" name="quantity" value="1"/>
+							<input class="btn btn-default add-to-cart" type="submit" value="Add to Cart"/>
+							</form>
+                    </div>
+                    <br>
+                     <a href="{% url 'contact' %}" class="btn btn-default  readButton" role="button"> Enquire </a>
+                    <br>
+                    </div>
+                </div>
+                
+                <div class="col-sm-2 col-lg-2 col-xs-12">
+                    <div class="card homeServiceCard">
+                    <div class="serviceHeader">
+                    <h4>Lorries <br><br> €30 </h4>
+                    </div>
+                    <br>
+                    <p> <i class="fa fa-check"></i> PH Neutral Shampoo</p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Wheels & Chassis </p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Hand Dried</p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> High Gloss Finish</p>
+                    <hr>
+                    <div class="action">
+							<form action = "{% url 'add_to_cart' %}" method='post'>
+							{% csrf_token %}
+							<input type="hidden" id="id" name="id" value="{{service.id}}"/>
+              				<input type="hidden" id="quantity" name="quantity" value="1"/>
+							<input class="btn btn-default add-to-cart" type="submit" value="Add to Cart"/>
+							</form>
+                    </div>
+                    <br>
+                     <a href="{% url 'contact' %}" class="btn btn-default  readButton" role="button"> Enquire </a>
+                    <br>
+                    </div>
+                </div>
+                
+                 <div class="col-sm-2 col-lg-2 col-xs-12">
+                    <div class="card homeServiceCard">
+                    <div class="serviceHeader">
+                    <h4>Tractors <br><br> €50 </h4>
+                    </div>
+                    <br>
+                    <p> <i class="fa fa-check"></i> PH Neutral Shampoo</p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Wheels & Chassis </p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Hand Dried</p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> High Gloss Finish</p>
+                    <hr>
+                    <div class="action">
+							<form action = "{% url 'add_to_cart' %}" method='post'>
+							{% csrf_token %}
+							<input type="hidden" id="id" name="id" value="{{service.id}}"/>
+              				<input type="hidden" id="quantity" name="quantity" value="1"/>
+							<input class="btn btn-default add-to-cart" type="submit" value="Add to Cart"/>
+							</form>
+                    </div>
+                    <br>
+                    <a href="{% url 'contact' %}" class="btn btn-default  readButton" role="button"> Enquire </a>
+                    <br>
+                </div>
+                
+                
+            </div>
+     
+    </section>
+   
+    
     
     <section id="clients">
          <div class="container-fluid">
@@ -86,42 +273,7 @@
     
     <hr>
 
- <section id="services">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6 col-md-offset-3 pad-bottom" data-scroll-reveal="enter from the bottom after 0.2s">
-                    <h2><strong>OUR SERVICES</strong></h2>
-                    Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae
-
-                </div>
-            </div>
-            <br>
-            <br>
-            {% for service in services %}
-            <div class="row text-center serviceRow">
-                <div class="col-sm-3 col-lg-3 serviceCard">
-                    <i class="fa fa-car fa-3x" aria-hidden="true"></i>
-                    <h4><strong>{{ service.name }}</strong></h4>
-                     <p>€{{ service.price }}</p>
-                     <a class="btn btn-default readButton" href ="http://valet-wolfenchic.c9users.io:8080/services/">Read More</a>
-					 	<div class="action">
-							<form action = "{% url 'add_to_cart' %}" method='post'>
-							{% csrf_token %}
-							<input type="hidden" id="id" name="id" value="{{service.id}}"/>
-              				<input type="hidden" id="quantity" name="quantity" value="1"/>
-							<input class="btn btn-default add-to-cart" type="submit" value="Add to Cart"/>
-							</form>
-						<br>
-							</div>
-						<br>
-				</div>
-                </div>
-                 {% endfor %}
-                 </div>
-               
-    </section>
-   
-    
+ 
     <hr>
     
     <div id="text-carousel" class="carousel slide" data-ride="carousel">
