@@ -32,10 +32,11 @@
 <hr>
 
  <section id="services">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row text-center">
                 <div class="col-md-6 col-md-offset-3 pad-bottom" data-scroll-reveal="enter from the bottom after 0.2s">
                     <h2 class="serviceTitle"><strong>OUR SERVICES</strong></h2>
+                    <p class="serviceIntro"> Here at DGValeting we care about quality. We guarantee to only use tried and tested products on your vehicle. </p>
 
                 </div>
             </div>
@@ -47,26 +48,17 @@
                 <div class="col-sm-2 col-lg-2 col-xs-12">
                     <div class="card homeServiceCard">
                     <div class="serviceHeader">
-                    <h4>Car Wash <br><br> €7 </h4>
+                    <h4>Exterior Wash <br><br> €7 - €50 </h4>
                     </div>
                     <br>
-                    <p> <i class="fa fa-check"></i> PH Neutral Shampoo</p>
+                    <p> <i class="fa fa-check"></i> Pre-wash </p>
                     <hr>
-                    <p> <i class="fa fa-check"></i> Wheels & Chassis </p>
+                    <p> <i class="fa fa-check"></i> PH Neutral Shampoo </p>
                     <hr>
-                    <p> <i class="fa fa-check"></i> Hand Dried</p>
+                    <p> <i class="fa fa-check"></i> Foamed using Meguires clay bar</p>
                     <hr>
-                    <p> <i class="fa fa-check"></i> High Gloss Finish</p>
+                    <p> <i class="fa fa-check"></i> Dried soft microfiber towel</p>
                     <hr>
-                    <div class="action">
-							<form action = "{% url 'add_to_cart' %}" method='post'>
-							{% csrf_token %}
-							<input type="hidden" id="id" name="id" value="{{service.id}}"/>
-              				<input type="hidden" id="quantity" name="quantity" value="1"/>
-							<input class="btn btn-default add-to-cart" type="submit" value="Add to Cart"/>
-							</form>
-                    </div>
-                    <br>
                      <a href="{% url 'contact' %}" class="btn btn-default  readButton" role="button"> Enquire </a>
                     <br>
                     </div>
@@ -75,26 +67,25 @@
                 <div class="col-sm-2 col-lg-2 col-xs-12">
                     <div class="card homeServiceCard">
                     <div class="serviceHeader">
-                    <h4>Jeep Wash <br><br> €9 </h4>
+                    <h4>Mini-Valet <br><br> €20 </h4>
                     </div>
                     <br>
-                    <p> <i class="fa fa-check"></i> PH Neutral Shampoo</p>
+                    <p> <i class="fa fa-check"></i> Wash & Chamois(dry) </p>
                     <hr>
-                    <p> <i class="fa fa-check"></i> Wheels & Chassis </p>
+                    <p> <i class="fa fa-check"></i> Exterior glass cleaned </p>
                     <hr>
-                    <p> <i class="fa fa-check"></i> Hand Dried</p>
+                    <p> <i class="fa fa-check"></i> Tyre shine </p>
                     <hr>
-                    <p> <i class="fa fa-check"></i> High Gloss Finish</p>
+                    <p> <i class="fa fa-check"></i> Vacuumed (including boot)</p>
                     <hr>
-                    <div class="action">
-							<form action = "{% url 'add_to_cart' %}" method='post'>
-							{% csrf_token %}
-							<input type="hidden" id="id" name="id" value="{{service.id}}"/>
-              				<input type="hidden" id="quantity" name="quantity" value="1"/>
-							<input class="btn btn-default add-to-cart" type="submit" value="Add to Cart"/>
-							</form>
-                    </div>
-                    <br>
+                    <p> <i class="fa fa-check"></i> Dash shined </p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Interior glasss cleaned  </p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Door shuts cleaned </p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> D.G.V Cherry Air applied </p>
+                    <hr>
                     <a href="{% url 'contact' %}" class="btn btn-default  readButton" role="button"> Enquire </a>
                     <br>
                     </div>
@@ -103,82 +94,28 @@
                  <div class="col-sm-2 col-lg-2 col-xs-12">
                     <div class="card homeServiceCard">
                     <div class="serviceHeader">
-                    <h4>Small Van <br><br> €9 </h4>
+                    <h4>Exterior Valet <br><br> €45 </h4>
                     </div>
                     <br>
-                    <p> <i class="fa fa-check"></i> PH Neutral Shampoo</p>
+                    <p> <i class="fa fa-check"></i> Wash & Chamois(dry)</p>
                     <hr>
-                    <p> <i class="fa fa-check"></i> Wheels & Chassis </p>
+                    <p> <i class="fa fa-check"></i> PH Neutral shampoo  </p>
                     <hr>
-                    <p> <i class="fa fa-check"></i> Hand Dried</p>
+                    <p> <i class="fa fa-check"></i> De-Tar </p>
                     <hr>
-                    <p> <i class="fa fa-check"></i> High Gloss Finish</p>
+                    <p> <i class="fa fa-check"></i> Clay bar </p>
                     <hr>
-                    <div class="action">
-							<form action = "{% url 'add_to_cart' %}" method='post'>
-							{% csrf_token %}
-							<input type="hidden" id="id" name="id" value="{{service.id}}"/>
-              				<input type="hidden" id="quantity" name="quantity" value="1"/>
-							<input class="btn btn-default add-to-cart" type="submit" value="Add to Cart"/>
-							</form>
-                    </div>
-                    <br>
-                     <a href="{% url 'contact' %}" class="btn btn-default  readButton" role="button"> Enquire </a>
-                    <br>
-                    </div>
-                </div>
-                
-                <div class="col-sm-2 col-lg-2 col-xs-12">
-                    <div class="card homeServiceCard">
-                    <div class="serviceHeader">
-                    <h4>Large Van <br><br> €12 </h4>
-                    </div>
-                    <br>
-                    <p> <i class="fa fa-check"></i> PH Neutral Shampoo</p>
+                    <p> <i class="fa fa-check"></i> Hand polished </p>
                     <hr>
-                    <p> <i class="fa fa-check"></i> Wheels & Chassis </p>
+                    <p> <i class="fa fa-check"></i> Tyres shines </p>
                     <hr>
-                    <p> <i class="fa fa-check"></i> Hand Dried</p>
+                    <p> <i class="fa fa-check"></i> All blacks & moldings restored  </p>
+                     <hr>
+                    <p> <i class="fa fa-check"></i> Exterior glass cleaned  </p>
+                     <hr>
+                    <p> <i class="fa fa-check"></i> Door shuts cleaned </p>
                     <hr>
-                    <p> <i class="fa fa-check"></i> High Gloss Finish</p>
-                    <hr>
-                    <div class="action">
-							<form action = "{% url 'add_to_cart' %}" method='post'>
-							{% csrf_token %}
-							<input type="hidden" id="id" name="id" value="{{service.id}}"/>
-              				<input type="hidden" id="quantity" name="quantity" value="1"/>
-							<input class="btn btn-default add-to-cart" type="submit" value="Add to Cart"/>
-							</form>
-                    </div>
-                    <br>
-                     <a href="{% url 'contact' %}" class="btn btn-default  readButton" role="button"> Enquire </a>
-                    <br>
-                    </div>
-                </div>
-                
-                <div class="col-sm-2 col-lg-2 col-xs-12">
-                    <div class="card homeServiceCard">
-                    <div class="serviceHeader">
-                    <h4>Lorries <br><br> €30 </h4>
-                    </div>
-                    <br>
-                    <p> <i class="fa fa-check"></i> PH Neutral Shampoo</p>
-                    <hr>
-                    <p> <i class="fa fa-check"></i> Wheels & Chassis </p>
-                    <hr>
-                    <p> <i class="fa fa-check"></i> Hand Dried</p>
-                    <hr>
-                    <p> <i class="fa fa-check"></i> High Gloss Finish</p>
-                    <hr>
-                    <div class="action">
-							<form action = "{% url 'add_to_cart' %}" method='post'>
-							{% csrf_token %}
-							<input type="hidden" id="id" name="id" value="{{service.id}}"/>
-              				<input type="hidden" id="quantity" name="quantity" value="1"/>
-							<input class="btn btn-default add-to-cart" type="submit" value="Add to Cart"/>
-							</form>
-                    </div>
-                    <br>
+                    
                      <a href="{% url 'contact' %}" class="btn btn-default  readButton" role="button"> Enquire </a>
                     <br>
                     </div>
@@ -187,29 +124,65 @@
                  <div class="col-sm-2 col-lg-2 col-xs-12">
                     <div class="card homeServiceCard">
                     <div class="serviceHeader">
-                    <h4>Tractors <br><br> €50 </h4>
+                    <h4>Interior Valet <br><br> €50 </h4>
                     </div>
                     <br>
-                    <p> <i class="fa fa-check"></i> PH Neutral Shampoo</p>
+                    <p> <i class="fa fa-check"></i> Complete vacuum  </p>
                     <hr>
-                    <p> <i class="fa fa-check"></i> Wheels & Chassis </p>
+                    <p> <i class="fa fa-check"></i> Head liner shampood  </p>
                     <hr>
-                    <p> <i class="fa fa-check"></i> Hand Dried</p>
+                    <p> <i class="fa fa-check"></i> Seats shampood </p>
                     <hr>
-                    <p> <i class="fa fa-check"></i> High Gloss Finish</p>
+                    <p> <i class="fa fa-check"></i> Carpets & floor mats shampood </p>
                     <hr>
-                    <div class="action">
-							<form action = "{% url 'add_to_cart' %}" method='post'>
-							{% csrf_token %}
-							<input type="hidden" id="id" name="id" value="{{service.id}}"/>
-              				<input type="hidden" id="quantity" name="quantity" value="1"/>
-							<input class="btn btn-default add-to-cart" type="submit" value="Add to Cart"/>
-							</form>
+                    <p> <i class="fa fa-check"></i> Door panels shampood  </p>
+                     <hr>
+                    <p> <i class="fa fa-check"></i> Boot shampood   </p>
+                     <hr>
+                    <p> <i class="fa fa-check"></i> Interior glass cleaned   </p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Dash & interior trim cleaned & shined  </p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> D.G.V Cherry Air applied  </p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Complimentary exterior wash  </p>
+                   <hr>
+                     <a href="{% url 'contact' %}" class="btn btn-default  readButton" role="button"> Enquire </a>
+                    <br>
                     </div>
-                    <br>
-                    <a href="{% url 'contact' %}" class="btn btn-default  readButton" role="button"> Enquire </a>
-                    <br>
                 </div>
+                
+                
+                <div class="col-sm-2 col-lg-2 col-xs-12">
+                    <div class="card homeServiceCard">
+                    <div class="serviceHeader">
+                    <h4>DGV Machine Polish Wax & Buffer <br><br> €100 </h4>
+                    </div>
+                    <br>
+                    <p> <i class="fa fa-check"></i> External hand wash, non de-greasing shampoo</p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Removal of heavy soiling / contaminants </p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Door shuts & sills cleared & de-greased</p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Full de-tar of vehicle</p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Alloy wheel decontamination</p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Chamois dry</p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Windows cleaned & non smear polish applied</p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Rubber protectant & Maguire’s hi gloss tyre gel applied to all tyre's</p>
+                    <hr>
+                    <p> <i class="fa fa-check"></i> Paintwork polished with machine polisher</p>
+                    <hr>
+                     <a href="{% url 'contact' %}" class="btn btn-default  readButton" role="button"> Enquire </a>
+                    <br>
+                    </div>
+                </div>
+                
+                 
                 
                 
             </div>

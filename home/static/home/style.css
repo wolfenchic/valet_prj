@@ -11,6 +11,7 @@ p {
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    
 }
 .navbar-trans {
   background: white; }
@@ -24,6 +25,10 @@ h1, h2, h3, h4 {
 
 .navContainer {
     padding-bottom: 5px;
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: #EB8732;
 }
 
 .nav li{
@@ -146,13 +151,18 @@ margin-top: 0px;
 }
 
 .serviceRow {
-    margin: auto;
+   margin-left: 140px;
     text-align: center;
+   
 }
 
 #services {
-    background-image: url(./images/cleaning.jpg);
+    background-image: url(./images/clean.jpg);
     padding-bottom: 30px;
+}
+
+.serviceIntro {
+    color: white;
 }
 
 .alert {
@@ -192,6 +202,10 @@ margin-top: 0px;
     padding: 20px 20px 20px 20px;
 }
 
+.cartWelcome {
+    margin-top: 100px;
+}
+
 .banner {
 position: relative;
 text-align: left;
@@ -214,6 +228,20 @@ margin-top: 0px;
 
 @media only screen and (max-width: 768px) {
     .contactText {
+        font-size: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .serviceRow {
+        margin: auto;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .tagLine {
         font-size: 2rem;
     }
 

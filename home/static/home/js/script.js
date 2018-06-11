@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
 $('a').mouseenter(function() {
- 	$(this).css("color", " #EB8732");
+ 	$(this).css("background-color", "#0E2386");
  });
 
 $('a').mouseleave(function(){
-    $(this).css("color", "#4a4a4f");
+    $(this).css("background-color", "white");
 });
 
 
