@@ -6,6 +6,7 @@ import datetime
 from django.contrib import auth, messages
 
 
+
 # Create your views here.
 
 def get_services_page(request):
