@@ -12,3 +12,9 @@ from django.contrib import auth, messages
 def get_services_page(request):
     services = Service.objects.all()
     return render(request, 'services.html', {'services': services})
+    
+
+def get_vouchers_page(request):
+    services = Service.objects.all()
+    return render(request, 'vouchers.html', {'services': services})
+
