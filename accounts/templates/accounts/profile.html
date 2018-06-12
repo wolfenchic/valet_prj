@@ -5,6 +5,21 @@
 <br>
 <br>
 <br>
+<div class="row">
+    <div class="col-sm-6 col-lg-6 col-xs-12 col-sm-offset-3 col-lg-offset-3">
     <h2>Success!</h2>
-    <p>You are logged in as {{ user.email }} </p>
+    <p>You are logged in as {{ user.username }} </p>
+    </div>
+    </div>
+    
+    {% for order in orders %}
+<div class="container">
+<div class="row">
+<div class="col-sm-3 ReservationMadeSection">
+    <div class="card reservationCard">
+<h3>Your Gift Voucher</h3>
+<p>Order ID: {{ order.id }}</p>
+<p>Order Details: {{ order }}</p>
+</div>
+{% endfor %}
 {% endblock content %}

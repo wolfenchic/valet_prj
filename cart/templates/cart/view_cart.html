@@ -3,11 +3,14 @@
 {% block content %}
 
 
-<h3 class="cartWelcome">Hi {{ user.get_username }}, welcome to your basket <br> <i class="fa fa-heart"></i></h3>
+<p class="cartWelcome">Hi {{ user.get_username }}, welcome to your basket!</p>
 
 
 {% include 'cart/_show_cart.html' %}
 
-<a href="{% url 'checkout' %}" type="button" class="checkout btn btn-default" role="button">Checkout</a>
-
+<div class="row text-center">
+    <div class="col-sm-6 col-lg-6 col-xs-12 col-sm-offset-3 col-lg-offset-3">
+<a href="{% url 'checkout' %}" type="button" class="checkout btn btn-default btn-lg addButton" role="button">Checkout</a>
+</div>
+</div>
 {% endblock content %}

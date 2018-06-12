@@ -4,6 +4,7 @@ from django.contrib import auth, messages
 from .forms import UserLoginForm
 from .forms import UserRegistrationForm
 from django.contrib.auth.decorators import login_required
+from checkout.models import Order, OrderLineItem
 
 # Create your views here.
 
@@ -44,7 +45,9 @@ def login(request):
 
 @login_required()
 def profile(request):
-    return render(request, 'accounts/profile.html')
+    orders = Order.objects.all()
+    order_detail = OrderLineItem.objects.all()
+    return render(request, 'accounts/profile.html', {'orders': orders, 'order_detail': order_detail})
     
 def register(request):
     if request.method == 'POST':
