@@ -28,6 +28,15 @@ $(".servicePageCard").mouseleave(function(){
    
 });
 
+$(".voucherCard").mouseenter(function(){
+    $(this).animate({opacity: '1.0'}, "slow");
+   
+});
+
+$(".voucherCard").mouseleave(function(){
+    $(this).animate({opacity: '0.7'}, "fast");
+});
+
 });
 
 

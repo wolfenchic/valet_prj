@@ -308,6 +308,16 @@ margin-top: 0px;
 #contact {
     background-image: url(./images/phone.jpg)
 }
+
+.voucherCard {
+    opacity: 0.8;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.voucherCard:hover{
+    -webkit-transform: scale(1.2);
+} 
 @media only screen and (max-width: 768px) {
     .contactText {
         font-size: 2rem;
