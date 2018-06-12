@@ -16,12 +16,13 @@
     {% for service in services %}
     <div class="container-fluid">
         <div class="row cardRow">
-        <div class="col-lg-3 col-sm-4 col-xs-10 text-left">
+        <div class="col-lg-4 col-sm-4 col-xs-12 text-center">
             <div class="card voucherCard">
                     <img class="img-responsive" src="{% static 'home/images/voucher1.jpeg' %}">
                    
                     <h4 class="voucherCardTitle">{{ service.name }}</h4>
                     <p class="voucherCardPrice"><strong>Price</strong> €{{ service.price }}</p>
+                   
                     <div class="action text-center">
 							<form action = "{% url 'add_to_cart' %}" method='post'>
 							{% csrf_token %}
@@ -30,10 +31,12 @@
 							<input class="btn btn-default add-to-cart Voucher" type="submit" value="Add to Cart"/>
 							</form>
 							</div>
-                      <br>
+                      
                       </div>
+                      </div>
+                      {% endfor %}
                     
                     
      
-    {% endfor %}
+
 {% endblock content %}
