@@ -10,7 +10,7 @@ class Service(models.Model):
     name = models.CharField(max_length=254, default='')
     description = models.TextField()
     price = models.IntegerField(default=0)
-    image = models.ImageField(upload_to='images', default='home/images/car3.jpeg')
+    image = models.ImageField(upload_to='images')
     
     def __str__(self):
         return self.name 
