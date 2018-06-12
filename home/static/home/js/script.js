@@ -1,18 +1,34 @@
 $(document).ready(function(){
 
-$('a').mouseenter(function() {
- 	$(this).css("background-color", "#0E2386");
+$('li').mouseenter(function() {
+ 	$(this).css("background-color", "#0F2281");
  });
 
-$('a').mouseleave(function(){
-    $(this).css("background-color", "white");
+$('li').mouseleave(function(){
+    $(this).css("background-color", "white").css("color", "#0F2281");
 });
 
-
+$('.readButton').mouseenter(function() {
+ 	$(this).css("background-color", "white").css("color", "#0F2281");
+ });
+ 
+ $('.readButton').mouseleave(function(){
+    $(this).css("background-color", "#0F2281").css("color", "white");
 });
 
+$(".servicePageCard").mouseenter(function(){
+    $(this).css("background-color", "#E48D3D").css("color", "white");
+  
+    
+});
 
+$(".servicePageCard").mouseleave(function(){
+    $(this).css("background-color", "white").css("color", "#0F2281");
+    $(".cardTitle").css("background-color", "white").css("color", "#5EC5C4")
+   
+});
 
+});
 
 
 

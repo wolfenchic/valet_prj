@@ -6,31 +6,310 @@
 <br>
 <br>
 <br>
-<h1>Our Services</h1>
 
-{% for service in services %}
-<div class="container-fluid">
-    <div class="row cardRow">
-        <div class="col-lg-4 col-sm-4 col-xs-12 text-center">
-            <div class="card servicesCard">
-                <h3 class="cardTitle">{{ service.name }}</h3>
-                
-                <p> {{ service.description }}</p>
-               
-                <p class="cardTag">€{{ service.price }}</p>
-					<div class="action">
-							<form action = "{% url 'add_to_cart' %}" method='post'>
-							{% csrf_token %}
-							<input type="hidden" id="id" name="id" value="{{service.id}}"/>
-              				<input type="hidden" id="quantity" name="quantity" value="1"/>
-							<input class="btn btn-default add-to-cart" type="submit" value="Add to Cart"/>
-							</form>
-						<br>
-							</div>
-            <br>
+<div id="servicesPage">
+ <div class="container">
+
+      <!-- Heading Row -->
+      <div class="row my-4">
+        <div class="col-lg-8">
+          <img class="img-responsive rounded" src="{% static 'home/images/carwash.JPG' %}" alt="David Gould, Valet, Mobile Valet, Car Wash, Car wash Ireland.">
+        </div>
+        <!-- /.col-lg-8 -->
+        <div class="col-lg-4">
+          <h1>David Gould Valeting</h1>
+          <br>
+          <p>Here at DGValeting we care about quality and our customers. We guarantee to only use tried and tested products on your vehicle!<br>If you have any queries or would like to book a service drop us a line.</p>
+          <br>
+          <a class="btn btn-default btn-lg readButton" href="{% url 'contact' %}">Contact</a>
+        </div>
+        <!-- /.col-md-4 -->
+      </div>
+      
+      <!-- /.row -->
+
+  <hr>
+
+      <!-- Content Row -->
+      <div class="row my-4">
+             <h1 class="serviceSectionHeading">Our Services</h1>
+        <div class="col-sm-4 col-lg-4 col-xs-12">
+          <div class="card servicePageCard">
+            <div class="card-body">
+              <h3 class="card-title">Vehicle Wash Price List</h3>
+              <br>
+              <p class="card-text">Cars €7 / NCT €9</p>
+              <hr>
+              <p class="card-text">Jeeps €9 / DOE €12</p>
+              <hr>
+              <p class="card-text">Small Vans €9 / DOE €10</p>
+              <hr>
+              <p class="card-text">Large Vans €12 / DOE €15</p>
+              <hr>
+              <p class="card-text">Articulated Lorries from €30</p>
+              <hr>
+              <p class="card-text">Tractors from €50</p>
+              <hr>
+            </div>
+            <div class="card-footer text-center">
+              <a href="{% url 'contact' %}" class="btn btn-default readButton" role="button"> Enquire </a>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+          <div class="col-sm-4 col-lg-4 col-xs-12">
+          <div class="card servicePageCard">
+            <div class="card-body">
+              <h3 class="card-title">Special Offer</h3>
+               <img class="img-responsive" src="{% static 'home/images/serviceOffer.jpg' %}">
+               <br>
+               <p class="card-text text-center"><b>Full Valet </b> </p>
+              <p class="card-text"> Treat your vehicle to a full valet at the reduced rate of €80, a saving of €15 when you book both together.</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="{% url 'contact' %}" class="btn btn-default readButton" role="button"> Enquire </a>
+            </div>
+          </div>
         </div>
         
+        <!-- /.col-md-4 -->
+          <div class="col-sm-4 col-lg-4 col-xs-12">
+          <div class="card servicePageCard">
+            <div class="card-body">
+                <h3 class="card-title">Gift Vouchers</h3>
+                 <img class="img-responsive" src="{% static 'home/images/voucher1.jpeg' %}">
+                 <br>
+              <p class="card-text text-center"><b>The perfect Gift </b> </p>
+              <p class="card-text">D.G.V gift vouchers are the perfect answer for Christmas, Birthdays & more. What could be a nicer present than a shiny clean vehicle? Our gift vouchers have NO expire date</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="{% url 'vouchers' %}" class="btn btn-default readButton" role="button"> Buy </a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+        
+        <hr>
+        
+         <div class="row my-4">
+        <div class="col-lg-8">
+          <img class="img-responsive rounded" src="{% static 'home/images/lorry.jpg' %}" alt="David Gould, Valet, Mobile Valet, Car Wash, Car wash Ireland.">
+        </div>
+        <!-- /.col-lg-8 -->
+        <div class="col-lg-4">
+          <h1>Truck & Bus Watch</h1>
+          <br>
+          <p>Located @ David Gould Valeting Texaco Mace Wilkinstown, our Truck Wash, is designed specifically for commercial vehicles.
 
-        {% endfor %}
+Every commercial vehicle is pre sprayed by Autosmart’s user friendly Hi~Foam & jet washed off by our team of experienced staff with both of our high pressure jet washs on our 2 bay car wash.
+
+Once again we apply AS Hi~Foam to the vehicle to let we let the brushing commence. Under arches are thoroughly jet washed to leave your HGV in pristine condition.
+
+We are Co. Meath’s largest vehicle wash center at 100 meters long. This allows us to wash many vehicles simultaneously. HGV drivers can enjoy a relaying Bewley’s Tea, coffee or
+or even a spot of lunch @ Doughty’s delightful delicious Deli.
+
+D.G.V HGV wash Wilkinstown is open 7 days a week & Bank Holidays
+</p>
+          <br>
+          
+        </div>
+         <div class="card-footer text-center">
+        <a class="btn btn-default btn-lg readButton" href="{% url 'contact' %}">Contact</a>
+        </div>
+        <!-- /.col-md-4 -->
+      </div>
+      </div>
+        
+    <hr>
+    
+    <div class="container">
+        
+        <div class="row my-4">
+            <h1 class="serviceSectionHeading">Valet Services</h1>
+        <!-- /.col-md-4 -->
+        <div class="col-sm-4 col-lg-4 col-xs-12">
+          <div class="card servicePageCard">
+            <div class="card-body">
+              <h3 class="card-title">Mini-Valet <br> €20</h3>
+              <p class="card-text"><i class="fa fa-check"></i> Wash & Chamois(dry) </p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Exterior glass cleaned </p>
+                    <hr>
+                   <p class="card-text"> <i class="fa fa-check"></i> Tyre shine </p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Vacuumed (including boot)</p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Dash shined </p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Interior glasss cleaned  </p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Door shuts cleaned </p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> D.G.V Cherry Air applied </p>
+                    <hr>
+            </div>
+            <div class="card-footer text-center">
+              <a href="{% url 'contact' %}" class="btn btn-default readButton" role="button"> Enquire </a>
+            </div>
+            </div>
+          </div>
+      
+      
+      
+        <!-- /.col-md-4 -->
+        <div class="col-sm-4 col-lg-4 col-xs-12">
+          <div class="card servicePageCard">
+            <div class="card-body">
+              <h3 class="card-title">Exterior Valet <br> €45</h3>
+              <p class="card-text"><i class="fa fa-check"></i> Wash & Chamois(dry)</p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> PH Neutral shampoo  </p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> De-Tar </p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Clay bar </p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Hand polished </p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Tyres shines </p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> All blacks & moldings restored  </p>
+                     <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Exterior glass cleaned  </p>
+                     <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Door shuts cleaned </p>
+                    <hr>
+                    
+            </div>
+            <div class="card-footer text-center">
+               <a href="{% url 'contact' %}" class="btn btn-default readButton" role="button"> Enquire </a>
+            </div>
+            </div>
+          </div>
+        
+        <!-- /.col-md-4 -->
+        
+        <div class="col-sm-4 col-lg-4 col-xs-12">
+          <div class="card servicePageCard">
+            <div class="card-body">
+              <h3 class="card-title">Interior Valet <br> €50</h3>
+              <p class="card-text"><i class="fa fa-check"></i> Complete vacuum  </p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Head liner shampood  </p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Seats, carpets & floor mats shampood </p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Door panels shampood  </p>
+                     <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Boot shampood   </p>
+                     <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Interior glass cleaned   </p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Dash & interior trim  </p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> D.G.V Cherry Air applied  </p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Complimentary exterior wash  </p>
+                   <hr>
+            </div>
+            <div class="card-footer text-center">
+               <a href="{% url 'contact' %}" class="btn btn-default readButton" role="button"> Enquire </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.row -->
+      
+      <hr>
+
+    <div class="row my-4">
+       
+        
+            <h1 class="serviceSectionHeading">Specialised Services</h1>
+            
+        <div class="col-sm-5 col-lg-5 col-xs-12 col-sm-offset-1">
+          <div class="card servicePageCard">
+            <div class="card-body">
+              <h3 class="card-title">D.G.V. Buffing Bright Back <br> €100</h3>
+              <p class="card-text specialService"> This process includes a full decontamination of your car's bodywork and wheels and puts down a coat of wax by machine polishing that will remove light scuffs and tarnishing.
+The machine polish wax and buff will leave your paintwork protected and lustrous and a polymer sealant is applied by hand giving your cars paintwork up to six months protection.
+  </p>
+              <hr>
+              <p class="card-text"><i class="fa fa-check"></i> Complete vacuum  </p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> External hand wash, non de-greasing shampoo</p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Removal of heavy soiling / contaminants </p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Door shuts & sills cleared & de-greased</p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Full de-tar of vehicle</p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Alloy wheel decontamination</p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Chamois dry</p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Windows cleaned & non smear polish applied</p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Rubber protectant & Maguire’s hi gloss tyre gel applied to all tyre's</p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Paintwork polished with machine polisher</p>
+                   <hr>
+            </div>
+            <div class="card-footer text-center">
+               <a href="{% url 'contact' %}" class="btn btn-default readButton" role="button"> Enquire </a>
+            </div>
+          </div>
+        </div>
+
+         <div class="col-sm-5 col-lg-5 col-xs-12">
+          <div class="card servicePageCard">
+            <div class="card-body">
+              <h3 class="card-title">D.G.V. Decontamination Bubble Bath <br> €45</h3>
+              <p class="card-text specialService"> Booking Essential.<br> Allow a minimum of 1hr 30mins. <br>Ideal for restoring relatively new and well maintained paintwork back to it's former glory. 
+  </p>
+              <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Pre-wash inc’s All door jams, Undercarrage, engine bay, inner wheels, wheel arches, window rubbers</p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Badges, grills, handles are detailed carefully at 50 Degrees </p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Door shuts & sills cleared & de-greased</p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Ph Netural shampoo foam is used with a wool mitt</p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Foamed again with Meguiars clay bar</p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Removal of tree sap particles, overspray or embedded contamination</p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> All tar spots removed safely  & shampoo’d again</p>
+                    <hr>
+                    <p class="card-text"> <i class="fa fa-check"></i> Dried off with soft microfiber towel.inc door jams and engine bay</p>
+                    <hr>
+            </div>
+            <div class="card-footer text-center">
+               <a href="{% url 'contact' %}" class="btn btn-default readButton" role="button"> Enquire </a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+        <hr>
+        
+        <div class="row">
+        
+<p>D.G.V use only tried tested & trusted products on our customers vehicles. 
+
+We do not use cheaply produced products that Ireland is been flooded with at present.
+
+Our suppliers: <a href="https://autosmart.co.uk/">Autosmart</a>, <a href="http://www.meguiars.com/m-en">Meguiars</a> and <a href="https://www.autoglym.com/">Autoglym</a>. 
+
+</p>
+</div>
+    </div>
+    </div>
+    </div>
+    <!-- /.container -->
 
 {% endblock content %}

@@ -142,7 +142,8 @@ margin-top: 0px;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
+    margin: auto;
 }
 
 .addButton, .add-to-cart {
@@ -227,12 +228,52 @@ margin-top: 0px;
 }
 
 .voucherCard {
-    padding: 20px 20px 20px 20px;
-    margin: 20px 20px 20px 20px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
     -webkit-box-shadow: 1px 0px 19px -4px rgba(228,141,61,1);
     
 }
 
+/*Services pages*/
+
+.servicePageCard  {
+    -webkit-box-shadow: 1px 0px 19px -4px rgba(228,141,61,1);
+    padding-bottom: 20px;
+    margin: 20px 20px 20px 20px;
+    }
+   
+
+.card-title {
+    background-color: #E48D3D;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+   
+}
+
+.card-text {
+    color: #0F2281;
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+.serviceSectionHeading, .card-title{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.serviceSectionHeading {
+    color: #0F2281;
+    
+}
+.serviceOffer {
+     text-align: center;
+     color: #E48D3D;
+}
+
+.specialService {
+    text-align: center;
+}
 @media only screen and (max-width: 768px) {
     .contactText {
         font-size: 2rem;
