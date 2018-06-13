@@ -15,6 +15,6 @@ def get_services_page(request):
     
 
 def get_vouchers_page(request):
-    services = Service.objects.all()
+    services = Service.objects.all().order_by("price")
     return render(request, 'vouchers.html', {'services': services})
 

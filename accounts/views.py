@@ -5,6 +5,8 @@ from .forms import UserLoginForm
 from .forms import UserRegistrationForm
 from django.contrib.auth.decorators import login_required
 from checkout.models import Order, OrderLineItem
+from django.contrib.auth.models import User
+from django.contrib.auth.forms import UserCreationForm
 
 # Create your views here.
 
