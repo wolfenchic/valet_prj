@@ -1,6 +1,5 @@
-{% extends 'base.html' %}
 
-{% block content %}
+{% extends "base.html" %} {% load staticfiles %} {% load bootstrap_tags %} {% block content %}
 <br>
 <br>
 <br>
@@ -12,14 +11,25 @@
     </div>
     </div>
     
-    {% for order in orders %}
-<div class="container">
+  {% if orders %}
+   {% for order in orders %}   
 <div class="row">
-<div class="col-sm-3 ReservationMadeSection">
-    <div class="card reservationCard">
+    <div class="col-sm-8 col-sm-offset-2 col-lg-8 col-xs-12 ReservationMadeSection text-center">
+        
+    <div class="card reservationCard text-left">
+        <img class="img-responsive voucherLogo" src="{% static 'home/images/logo.png' %}">
+<p>Wilkinstown, Navan, Co. Meath</p>
+<p> Ph: 046 902 8465 | 086 065 0061 | www.dgvalet.ie</p>
 <h3>Your Gift Voucher</h3>
 <p>Order ID: {{ order.id }}</p>
-<p>Order Details: {{ order }}</p>
+<p>From: {{order.full_name }}</p>
+<p>To: David Gould </p>
+<p>Date of Issue: {{ order.date }}</p>
+<p>Value of Voucher: {{ order_detail }}</p>
+</div>
 </div>
 {% endfor %}
+{% endif %}
+
+</div>
 {% endblock content %}

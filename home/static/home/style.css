@@ -309,6 +309,17 @@ margin-top: 0px;
  
 }
 
+/*Profile*/
+
+.voucherLogo {
+    margin: auto;
+}
+
+.reservationCard {
+    border: 1px solid gray;
+    margin: 20px;
+    padding: 20px;
+}
 #contact {
     background-image: url(./images/phone.jpg)
 }

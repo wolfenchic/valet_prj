@@ -41,7 +41,7 @@ def login(request):
         
     else:
         form = UserLoginForm()
-    
+
     
     return render(request, 'accounts/login.html', { 'form': form })
 
