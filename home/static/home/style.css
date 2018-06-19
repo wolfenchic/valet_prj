@@ -345,6 +345,10 @@ margin-top: 0px;
     -webkit-transform: scale(1.2);
 } 
 
+.card-img-top {
+    margin: auto;
+    padding-bottom: 20px;
+}
 .voucherAddress {
     color:#0F2281;
 }
@@ -355,6 +359,8 @@ margin-top: 0px;
 
 .voucherCardTitle, .voucherCardPrice, .voucherAddress1, .voucherNameForm {
     color: #EB8732;
+    
+    
 }
 
 .voucherSmallprint {

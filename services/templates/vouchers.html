@@ -24,14 +24,14 @@
    
     <div class="container">
         <div class="row cardRow">
-        <div class="col-lg-6 col-sm-6 col-xs-12 text-center">
+        <div class="col-lg-4 col-sm-4 col-xs-12 text-center">
             <div class="card voucherCard">
-                     <img class="card-img-top" src="{{ MEDIA_URL }}{{ service.image }}" width="100%"; height="300px"/>
+                     <img class="card-img-top img-responsive" src="{{ MEDIA_URL }}{{ service.image }}"/>
                     <h4 class="voucherCardTitle">{{ service.name }}</h4>
                       <p class="voucherAddress">Wilkinstown, Navan, Co. Meath</p>
                      <p class="voucherContact"> Ph: 046 902 8465 | 086 065 0061 | www.dgvalet.ie</p>
                     <p class="voucherCardPrice"><strong>Price</strong> €{{ service.price }}</p>
-                    <p class="voucherSmallprint">*Vouchers do not expire*</p>
+                    <p class="voucherSmallprint">*Vouchers do not expire <br> Once purchased gift vouchers can be customised with a personalised message *</p>
                    
                     <div class="action text-center">
 							<form action = "{% url 'add_to_cart' %}" method='post'>
