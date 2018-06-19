@@ -47,9 +47,8 @@ def login(request):
 
 @login_required()
 def profile(request):
-    orders = Order.objects.all()
-    order_detail = OrderLineItem.objects.all()
-    return render(request, 'accounts/profile.html', {'orders': orders, 'order_detail': order_detail})
+    orders = Order.objects.filter(user = request.user)
+    return render(request, 'accounts/profile.html', {'orders': orders})
     
 def register(request):
     if request.method == 'POST':

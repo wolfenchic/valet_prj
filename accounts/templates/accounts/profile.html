@@ -25,7 +25,7 @@
 <p>From: {{order.full_name }}</p>
 <p>To: David Gould </p>
 <p>Date of Issue: {{ order.date }}</p>
-<p>Value of Voucher: {{ order_detail }}</p>
+<p>Value of Voucher: {{ order.service.price }}</p>
 </div>
 </div>
 {% endfor %}

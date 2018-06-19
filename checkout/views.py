@@ -22,6 +22,7 @@ def checkout(request):
         order_form = OrderForm(request.POST)
         order = order_form.save(commit=False)
         order.date = timezone.now()
+        order.user = request.user
         order.save()
         
         # Save the Order Line Items
