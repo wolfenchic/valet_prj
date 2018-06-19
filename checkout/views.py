@@ -58,7 +58,7 @@ def checkout(request):
         
         #Clear the Cart
         del request.session['cart']
-        return redirect("home")
+        return redirect("profile")
     else:
         order_form = OrderForm()
         payment_form = MakePaymentForm()

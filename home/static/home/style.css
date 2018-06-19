@@ -146,7 +146,7 @@ margin-top: 0px;
     margin: auto;
 }
 
-.addButton, .add-to-cart {
+.addButton, .add-to-cart, .btn-print {
     background-color: #EB8732;
     color: white;
 }
@@ -309,6 +309,17 @@ margin-top: 0px;
  
 }
 
+.alert {
+    background: white; 
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.badge-light {
+    background-color: #5EC5C4;
+}
+
 /*Profile*/
 
 .voucherLogo {
@@ -316,9 +327,10 @@ margin-top: 0px;
 }
 
 .reservationCard {
-    border: 1px solid gray;
+    -webkit-box-shadow: 1px 0px 19px -4px rgba(228,141,61,1);
     margin: 20px;
     padding: 20px;
+    color: #0F2281;
 }
 #contact {
     background-image: url(./images/phone.jpg)
@@ -332,6 +344,40 @@ margin-top: 0px;
 .voucherCard:hover{
     -webkit-transform: scale(1.2);
 } 
+
+.voucherAddress {
+    color:#0F2281;
+}
+
+.voucherContact {
+     color: #0F2281;
+}
+
+.voucherCardTitle, .voucherCardPrice, .voucherAddress1, .voucherNameForm {
+    color: #EB8732;
+}
+
+.voucherSmallprint {
+    font-size: 1rem;
+    color: #0F2281;
+}
+
+.voucherNameForm {
+    font-size: 1.8rem;
+    color:#0F2281 ;
+}
+
+.print {
+	display:none
+}
+.form-group {
+    background-color: orange;
+    padding: 20px;
+}
+ @media print {
+	.print {display:block}
+	.btn-print {display:none;}
+}
 @media only screen and (max-width: 768px) {
     .contactText {
         font-size: 2rem;

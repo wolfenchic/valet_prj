@@ -1,35 +1,49 @@
 
 {% extends "base.html" %} {% load staticfiles %} {% load bootstrap_tags %} {% block content %}
+
 <br>
 <br>
 <br>
 <br>
 <div class="row">
-    <div class="col-sm-6 col-lg-6 col-xs-12 col-sm-offset-3 col-lg-offset-3">
+    <div class="col-sm-6 col-lg-6 col-xs-12 col-sm-offset-3 col-lg-offset-3 text-center">
     <h2>Success!</h2>
-    <p>You are logged in as {{ user.username }} </p>
+    <p>Welcome back, {{ user.username }} </p>
     </div>
     </div>
     
   {% if orders %}
-   {% for order in orders %}   
+  <div class="col-sm-8 col-lg-8 col-xs-12 col-sm-offset-2 text-center">
+   <p>Thank you for your purchase. You'll find your purchase details below. If you've purchased a gift voucher you can customise it below with your choice of message and the recipient's name. When you're happy with it simply click the print button to save or print your customised gift voucher. </p>
+   </div>
+   {% for order in orders %} 
 <div class="row">
-    <div class="col-sm-8 col-sm-offset-2 col-lg-8 col-xs-12 ReservationMadeSection text-center">
+    <div class="col-sm-10 col-sm-offset-1 col-lg-10 col-xs-12 ReservationMadeSection text-center">
         
-    <div class="card reservationCard text-left">
+    <div class="card reservationCard text-center">
         <img class="img-responsive voucherLogo" src="{% static 'home/images/logo.png' %}">
-<p>Wilkinstown, Navan, Co. Meath</p>
-<p> Ph: 046 902 8465 | 086 065 0061 | www.dgvalet.ie</p>
+        <br>
+<p class="voucherAddress1">Wilkinstown, Navan, Co. Meath</p>
+<p class="voucherAddress1"> Ph: 046 902 8465 | 086 065 0061 | www.dgvalet.ie</p>
+<p>Date of Issue: {{ order.date }}</p>
 <h3>Your Gift Voucher</h3>
 <p>Order ID: {{ order.id }}</p>
 <p>From: {{order.full_name }}</p>
-<p>To: David Gould </p>
-<p>Date of Issue: {{ order.date }}</p>
-<p>Value of Voucher: {{ order.service.price }}</p>
+<div class="form-group">
+  <label for="comment">Name of Recipient:</label>
+  <textarea class="form-control text-center" placeholder="Enter the name of the recipient here" rows="2" id="name" ></textarea>
 </div>
+<div class="form-group">
+  <label for="comment">Message:</label>
+  <textarea class="form-control text-center" placeholder="Enter a message for the recipient here" rows="3" id="comment"></textarea>
+</div>
+<p>Value of Voucher: €20.00 </p>
+<button class="btn-print">Print</button>
+</div>
+
 </div>
 {% endfor %}
 {% endif %}
-
+</div>
 </div>
 {% endblock content %}

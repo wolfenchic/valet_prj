@@ -37,6 +37,13 @@ $(".voucherCard").mouseleave(function(){
     $(this).animate({opacity: '0.7'}, "fast");
 });
 
+(function( w, d ) {
+   'use strict'; 
+
+   d.querySelector( '.btn-print' ).addEventListener( 'click', function() { w.print(); }, false );
+
+}( window, document ));
+
 });
 
 
