@@ -91,21 +91,26 @@
             <div class="container-fluid">
                 <div class="row text-center">
                     <div class="col-sm-4 text-center">
-                        <a href="#">About</a>
+                        <a href="{% url 'profile' %}">Profile</a>
                         <br>
-                        <a href="#">Services</a>
-
-                        
+                        <a href="{% url 'vouchers' %}">Shop</a>
+                        <br>
+                         <a href="https://www.facebook.com/DaveGouldValeting/"><img class="img-responsive socialLogo" src="{% static 'home/images/facebook.png' %}"></a>
 
                     </div>
+                    
                     <div class="col-sm-4 text-center">
                        <img class="img-responsive footerLogo" src="{% static 'home/images/logo.png' %}"></img>
-                     </div>
-                     
+                       </div>
+                       
                     <div class="col-sm-4 text-center">
-                            <a href="#">Contact</a>
+                            <a href="{% url 'contact' %}">Contact</a>
                             <br>
-                            <a href="#">Services</a>
+                            <a href="{% url 'services' %}">Services</a>
+                            <br>
+                             <a href="https://www.instagram.com/explore/locations/1031274784/david-gould-valeting/"><img class="img-responsive socialLogo" src="{% static 'home/images/instagram.png' %}"></a>
+                     </div>
+                            
                         </div>
                         <br>
                         </div>
