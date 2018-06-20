@@ -12,4 +12,7 @@ def get_home_page(request):
   services = Service.objects.all()
   return render(request, 'home.html', {'services': services})
   
+def get_about_page(request):
+  return render(request, 'about.html')
+  
 

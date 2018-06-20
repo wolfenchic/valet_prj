@@ -35,6 +35,7 @@ def checkout(request):
                 service = service,
                 quantity = quantity
                 )
+        
             order_line_item.save()
         print("did cart stuff")
         

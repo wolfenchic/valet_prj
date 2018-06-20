@@ -19,6 +19,7 @@ from django.views.static import serve
 from django.conf import settings
 from services import urls as services_urls
 from home.views import get_home_page
+from home.views import get_about_page
 from services.views import get_services_page
 from accounts import urls as accounts_urls
 from cart import urls as cart_urls
@@ -28,7 +29,8 @@ from checkout import urls as checkout_urls
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', get_home_page, name='home'), 
+    url(r'^$', get_home_page, name='home'),
+    url(r'^about', get_about_page, name='about'),
     url(r'^services/', include(services_urls)), 
     url(r'^accounts/', include(accounts_urls)),
     url(r'^cart/', include(cart_urls)),

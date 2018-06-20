@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect,  get_object_or_404
 from django.http import HttpResponse
 from django.contrib import auth, messages
 from .forms import UserLoginForm
@@ -48,7 +48,8 @@ def login(request):
 @login_required()
 def profile(request):
     orders = Order.objects.filter(user = request.user)
-    return render(request, 'accounts/profile.html', {'orders': orders})
+    order_detail = OrderLineItem.objects.all()
+    return render(request, 'accounts/profile.html', {'orders': orders, 'order_detail': order_detail})
     
 def register(request):
     if request.method == 'POST':

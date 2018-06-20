@@ -1,0 +1,50 @@
+{% extends "base.html" %} {% load staticfiles %} {% load bootstrap_tags %} {% block content %}
+
+<br>
+<br>
+
+<div class="container">
+    <div class="row">
+      
+        <div class="col-sm-10 col-lg-10 col-xs-12 col-sm-offset-1 col-lg-offset-1">
+              <h1>About Us</h1>
+              <hr>
+            <p>David Gould Valeting was established in August 2008 as a mobile Valeting service servicing both private & public sectors. We developed a massive customer base in the early years & we still have that huge following today.
+            <br>
+            <br>
+            In November 2013 we based ourselves @ Texaco/Mace Wilkinstown, Navan where we operate Co. Meath’s busiest Vehicle Wash & Valeting centers. 
+            <br>
+            We open 7 days a week & bank holidays. Our opening hours are from 09:00 ~ 18:00 Monday to Saturday & Sunday’s & Bank Holidays from 10:00 ~ 17:00
+            
+            <br>
+            <br>
+            We are a business with strong community values. In total we employ 6 local people & we love giving back to the community by supporting local schools and being involved with events & fundraisers.
+             <br>
+             In 2017 we held our 1st ever Daffodil Day fundraiser car wash & we raised €1090 for cancer research in Ireland, this year 2018 we smashed the previous amount by over €200, raising €1300. 
+             <br>  
+            <br>
+               <img class="img-responsive daffodil" src="{% static 'home/images/daffodil.jpg' %}" alt="David Gould, Valet, Mobile Valet, Car Wash, Car wash Ireland.">
+           
+        <br>
+        <br>
+        
+        
+When you put your hand in your pocket, take out your money and hand it to us you can expect very high standards from us.
+
+We’re always contactable through our Facebook page “David Gould Valeting” on the phone or through the  <a href="{% url 'contact' %}">contact form</a> on this site.
+         <br>
+         <br>
+         
+         We hope to see you soon!
+         
+         </p>
+         
+         
+        </div>
+           
+        </div>
+    </div>
+    
+</div>
+
+{% endblock content %}
