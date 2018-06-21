@@ -48,7 +48,7 @@ def checkout(request):
                 customer = stripe.Charge.create(
                     amount=total_in_cent,
                     currency="EUR",
-                    description="Dummy Transaction",
+                    description="Website_Transaction",
                     card=payment_form.cleaned_data['stripe_id'],
                 )
                 if customer.paid:
